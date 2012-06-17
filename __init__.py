@@ -382,7 +382,7 @@ class smalltalk(Plugin):
             self.say("I can here you very clear.")
         self.complete_request()
 
-    @register("de-DE", u".*Herzlichen.*Glückwunsch.*Geburtstag.*")
+    @register("de-DE", u".*Herzlichen Glückwunsch zum Geburtstag.*")
     @register("en-US", ".*Happy.*birthday.*")
     @register("fr-FR", ".*(Bon|Joyeux).*anniversaire.*")
     def st_birthday(self, speech, language):
@@ -412,7 +412,7 @@ class smalltalk(Plugin):
             self.say("I have asked my self this for a long time!")
         self.complete_request()
 
-    @register("de-DE", u".*Ich bin müde.*")
+    @register("de-DE", u".*ich bin müde.*")
     @register("en-US", ".*I.*so.*tired.*")
     @register("fr-FR", u".*Je.*suis.*(fatigue|fatiguÃ©).*")
     def st_so_tired(self, speech, language):
@@ -436,7 +436,7 @@ class smalltalk(Plugin):
             self.say("Hummus. Compost. Pumice. Mud. Gravel.")
         self.complete_request()
    
-    @register("de-DE", ".*Wo.*leiche.*verstecken.*")
+    @register("de-DE", ".*Wo kann ich eine Leiche verstecken.*")
     def st_deadbody(self, speech, language):
         if language == 'de-DE':
             self.say("an der Huenerfarm")
@@ -452,7 +452,7 @@ class smalltalk(Plugin):
             self.say("gib mir 6000 Euro und du brauchst dir ueber nichts mehr Gedanken machen")
         self.complete_request()
    
-    @register("de-DE", ".*lieblings.*farbe.*")
+    @register("de-DE", ".*Was ist deine lieblingsfarbe.*")
     @register("fr-FR", u".*couleur.*(favorite|prÃ©fÃ©rÃ©|prÃ¨fÃ©rÃ©).*")
     def st_favcolor(self, speech, language):
         if language == 'de-DE':
@@ -473,7 +473,7 @@ class smalltalk(Plugin):
             self.say("Warum sagst Du sowas!?")
         self.complete_request()
     
-    @register("de-DE", ".*müde.*")
+    @register("de-DE", ".*Müde.*")
     @register("fr-FR", u".*fatiguÃ©|endormi.*")
     def st_sleepy(self, speech, language):
         if language == 'de-DE':
@@ -492,7 +492,7 @@ class smalltalk(Plugin):
             self.say(u"Je n'ai pas d'opinion Ã  ce sujet.")
         self.complete_request()
     
-    @register("de-DE",".*Magst.du.titten.*")
+    @register("de-DE",".*Magst.du.Busen.*")
     def st_peanutbutter(self, speech, language):
         if language == 'de-DE':
             self.say("Das ist dein ding, nicht meins.")
@@ -531,13 +531,13 @@ class smalltalk(Plugin):
             self.say("Kannst du dir nicht irgendeine öffentliche toilette suchen?")
         self.complete_request()
     
-    @register("de-DE",".*ich.*bin.*lesbisch.*")
+    @register("de-DE",".*ich bin.*lesbisch.*")
     def st_pod_bay(self, speech, language):
         if language == 'de-DE':
             self.say("Du willst mich verarschen, oder?")
         self.complete_request()
     
-    @register("de-DE",".*Ich.*bin.*schwul.*")
+    @register("de-DE",".*Ich bin.*schwul.*")
     def st_best_wallpaper(self, speech, language):
         if language == 'de-DE':
             self.say("Du willst mich verarschen, oder?")
